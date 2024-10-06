@@ -1,0 +1,128 @@
+/* Projects Section */
+.projects-section {
+  padding: 100px 20px;
+  background-color: #252e3f; /* Light background for clean look */
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #204d8d; /* Dark gray for bold contrast */
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.projects-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background-color: #3b82f6; /* Accent line under heading */
+}
+
+/* Projects Grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  padding: 0 10px;
+}
+
+/* Project Card */
+.project {
+  background-color: rgb(22, 31, 44);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.project:hover {
+  transform: translateY(-10px); /* Subtle lift effect */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Image within Project Card */
+.project .image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project:hover .image img {
+  transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+/* Project Content */
+.project h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #1f2937; /* Dark heading */
+  transition: color 0.3s ease;
+}
+
+.project p {
+  font-size: 1.1rem;
+  color: #6b7280; /* Soft gray text */
+  margin-top: 10px;
+}
+
+/* Hover Overlay Animation */
+.project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 130, 246, 0.8); /* Blue overlay */
+  z-index: -1;
+  transition: transform 0.4s ease;
+  transform: scale(0);
+  border-radius: 12px;
+}
+
+.project:hover::before {
+  transform: scale(1); /* Expanding overlay on hover */
+}
+
+/* Text and Overlay Interaction */
+.project h3, .project p {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project:hover h3, .project:hover p {
+  opacity: 1;
+  transform: translateY(0); /* Text smoothly slides in */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+  }
+
+  .projects-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .project {
+    padding: 30px;
+  }
+}

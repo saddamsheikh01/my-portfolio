@@ -1,0 +1,92 @@
+/* General Header Styling */
+.header {
+    background-color: #1f2937; /* Dark background for modern look */
+    color: white;
+    padding: 80px 20px; /* Ample padding for a spacious feel */
+    text-align: center;
+    border-bottom: 4px solid #3b82f6; /* Accent color for border */
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Header Title */
+  .header-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff; /* White color for contrast */
+    text-transform: uppercase; /* Professional uppercase style */
+    letter-spacing: 1.5px; /* Add spacing between letters */
+  }
+  
+  /* Header Subtitle */
+  .header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #9ca3af; /* Softer gray for subtitle */
+    margin-bottom: 40px;
+  }
+  
+  /* Navigation Styling */
+  .header-nav {
+    margin-top: 40px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between items */
+  }
+  
+  .nav-item {
+    display: inline-block;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .nav-link:hover {
+    background-color: #3b82f6; /* Blue background on hover */
+    color: white;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Add shadow for emphasis */
+  }
+  
+  .nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* Accessibility focus */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 2.5rem; /* Adjust title size for smaller screens */
+    }
+  
+    .header-subtitle {
+      font-size: 1rem; /* Adjust subtitle size */
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      gap: 20px; /* Stack the nav items vertically */
+    }
+  
+    .nav-link {
+      width: 100%; /* Make links full-width on smaller screens */
+      text-align: center;
+    }
+  }
+  

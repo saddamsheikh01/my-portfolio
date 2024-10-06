@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Header Section */
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #9ca3af;
+}
+
+/* Navigation Links */
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #3b82f6;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #2563eb;
+}
+
+/* Add subtle animations */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Container and Spacing for Content */
+section {
+  margin: 60px auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Buttons */
+button {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #059669;
+}
+

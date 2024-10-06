@@ -1,0 +1,71 @@
+/* About Section Styling */
+.about-section {
+  padding: 80px 20px;
+  background-color: #243a50; /* Light background for a clean look */
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  color: #e3e8f0; /* Dark color for heading */
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #acb4be; /* Softer gray for description */
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.8;
+}
+
+/* Skills Section */
+.about-section h3 {
+  font-size: 2rem;
+  color: #bdc7ce;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap items for smaller screens */
+  gap: 20px; /* Space between skills */
+}
+
+.about-section li {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section li:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-section ul {
+    flex-direction: column;
+  }
+
+  .about-section li {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
